@@ -1,0 +1,16 @@
+{
+  "name": "wideReality",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "eReality eXtension pack",
+  "permissions": [
+    "http://ereality.ru/"
+  ],  
+  "content_scripts": [
+    {
+      "matches": ["http://www.ereality.ru/core/"],
+      "css": ["widereality.css"],
+      "js": ["jquery.js", "runner.js"]
+    }
+  ]
+}
